@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/Logo.webp" type="image/x-icon">
+    <title>Grand Friends</title>
+</head>
+<body>
+    <div class="contenedor">
+    <header>
+        <div class="logo">Grand <span>Friends</span></div>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="cultivo.html">Cultivo</a></li>
+                <li><a href="famas.html">Famas</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>¿Que es lo que quieres saber?</h2>
+<form action="enviar.php" method="post" enctype="text/plain" netlify>
+    <label for="namespj">Nombre de Personaje</label>
+    <input id="namespj" name="namespj" type="text" required
+    placeholder="Ingrese Nombre Personaje">
+    <br>
+    <label for="nivel">nivel</label>
+    <input id="nivel" name="nivel" type="number" required
+    placeholder="Ingrese su nivel">
+    <br>
+    <label for="Clase">Clase</label>
+    <input id="Clase" name="Clase" type="text" required
+    placeholder="Ingrese su Clase">
+    <br>
+    <label for="correo">correo</label>
+    <input id="correo" name="correo" type="email" required
+    placeholder="Ingrese su correo">
+    <br>
+    <h3>¿Cual es su consulta?</h3>
+    <label for="">comentarios</label><br>
+    <textarea name="" id="" cols="30" rows="5"
+    placeholder="escribe tus comentarios"></textarea>
+    <br>
+    
+    <input type="submit">
+    <input type="reset" value="borrar">
+    <input type="button" value="sin accion">
+
+    <footer class="footer">
+        <p>¡Gracias por visitarnos y sigue tu aventura por toda Siwa!</p> 
+        <div class="redes">
+            <a href="https://www.facebook.com/GrandFantasiaLAT/?ref=nf"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://lat.grandfantasia.aeriagames.com/"><i class="fa-brands fa-chrome"></i></a>
+            <a href="https://www.youtube.com/user/AeriaGF"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
