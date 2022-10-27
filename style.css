@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+.logo{
+    height: 10px;
+    list-style: 20px;
+    padding: 20px;
+    text-shadow: 0 0 4px yellow;
+}
 body {
-    background-image: url("imagenes/BigLogoNewsLetter.jpg"); 
-    /* background-color: #d6a843; */
+    background-image: url(imagenes/fondo.jpg);
     background-position-x:center;
     background-size: 93.5rem; 
     background-attachment:fixed;
@@ -15,7 +20,7 @@ body {
 }
 /* Modificacion del texto en home */
 .texto{
-    line-height: 25px;
+    line-height: 30px;
     text-indent: 20px;
 } 
 /* ------------ */
@@ -25,6 +30,9 @@ body {
     text-indent: 20px;
     text-align: center;
 }
+
+
+
 header{
     height: 90px;
     width: 100%;
@@ -36,25 +44,28 @@ header{
     text-transform: capitalize;
 }
 
-
-
 /* Imagenes para el home */
 img {
     width: 100%;
-    height: auto;
+    height: 100;
     }
 
 .imaghome1{
+    
     text-align: center;
     width: 70%;
     max-width: 600px;
     margin: 0 auto;
+    padding: 30px;
 }
 .imaghome2{
     text-align: center;
     width: 96%;
     max-width: 600px;
     margin: 0 auto;
+    padding: 30px;
+    
+    
 }
 
 /* Imagenes para clases */
@@ -71,15 +82,31 @@ img {
     max-width: 250px;
     margin: 0 auto;
 }
-/* Imagenes para cultivo */
-/* Imagenes para famas*/
-/* Imagenes para ayuda */
 
+/* Imagenes para cultivo */
+.imagclultivo1{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+.imagstats{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+
+
+/* Imagenes para famas*/
+
+
+/* Imagenes para ayuda */
 
 
 .logo{
     float: left;
-    -webkit-text-stroke: 0.25px black;
     background-image: url(imagenes/Logo.webp);
 }
 
@@ -87,6 +114,7 @@ nav{
     background: #9e1ec5;
     height: 80px;
     width: 100%;
+    box-shadow:inset 0 0 5px 1px yellow
     
 }
 .enlace{
@@ -110,7 +138,8 @@ nav ul li a{
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    
+
 }
 li a.active, li a:hover{
     background: #000090;
@@ -134,6 +163,175 @@ section{
     background-position: center center;
     height: calc(100vh - 80px);
 }
+
+
+
+/* Modificacion de ol en home */
+ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    text-indent: 10px;
+    color: rgb(3, 3, 3);
+    line-height: 30px;
+    
+}
+/* modificacion de ol en clases */
+.clases{
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+    text-indent: 10px;
+    color: rgb(3, 3, 3);
+    line-height: 30px;
+    
+}
+/* ---------------- */
+
+/* Modificacion ul en clases */
+
+/* --------------------- */
+
+h1{
+    color: rgb(233, 172, 59);
+    text-shadow: 0 0 1px rgb(7, 1, 1);
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
+}
+
+h2{
+    color: rgb(233, 172, 59);
+    text-shadow: 0 0 1px rgb(7, 1, 1);
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.5px black;
+    text-indent: 10px;
+    
+}
+/* H2 clase */
+.h2clase{
+    color: rgb(233, 172, 59);
+    text-shadow: 0 0 1px rgb(7, 1, 1);
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.5px black;
+    text-indent: 10px;
+    text-align: center;
+}
+h3{
+    color: rgb(236, 0, 0);
+    text-shadow: 0 0 1px rgb(7, 1, 1);
+    margin-bottom: 10px;
+    -webkit-text-stroke: 0.5px black;
+    text-indent: 10px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: rgba(174, 37, 192, 0.719);
+    text-align: center;
+    font-size: 20px;
+    text-transform:capitalize;
+    padding: 4px;
+    bottom: 0;
+    width: 100%;
+    height: 95px;
+    color: rgb(255, 238, 238);
+    position:relative;
+    clear: both;
+    left: 0%; 
+    box-shadow:inset 0 0 5px 1px yellow  
+}  
+
+.redes{
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding: 10px;
+
+}
+
+.redes a{
+    color: rgb(247, 226, 226);
+}
+
+.redes a:hover{
+    color: rgb(46, 1, 1);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+
+
+@media screen and (max-width: 480px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #9e1ec5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 1, 1);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    .imagclasenovato1{
+        height: 320px;
+        width: 500px;
+    }
+    .imagclultivo1{
+        
+        height: auto;
+        width: 300px;
+    }
+    .imagstats{
+        width: 340px;
+        text-align: left;
+    }
+
+    .imaghome1{
+        width: 300px;
+        
+    }
+    .imaghome2{
+        width: 300%;
+        /* background-image: url(imagenes/requisitos\ 2.PNG); */
+    }
+    .footer {
+        font-size: 15px;
+    }    
+
+    .redes{
+        font-size: 40px;
+        letter-spacing: 10px;
+        padding: 10px;
+    
+    }
+}
+
 
 @media (max-width: 952px){
     .enlace{
@@ -168,131 +366,9 @@ section{
     }
     li a:hover, li a.active{
         background: none;
-        color: rgb(249, 253, 0);
+        color: rgb(253, 0, 0);
     }
     #check:checked ~ ul{
         left:0;
     }
 }
-
-/* .logo span{
-    color: rgb(0, 0, 0);
-}
-
-.barra{
-    float: right;
-}
-
-.barra ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.barra ul li{
-    display: inline ;
-}
-.barra ul li a{
-    text-decoration: none;
-    
-    padding: 10px;
-}
-
-.barra a:hover{
-background-color: rgb(224, 208, 208); */
-    
-
-/* Modificacion de ol en home */
-ol{
-    list-style-type: upper-roman;
-    list-style-position: inside;
-    text-indent: 10px;
-    color: rgb(3, 3, 3);
-    line-height: 30px;
-    
-}
-/* modificacion de ol en clases */
-.clases{
-    text-align: center;
-    list-style-type: square;
-    list-style-position: inside;
-    text-indent: 10px;
-    color: rgb(3, 3, 3);
-    line-height: 30px;
-    
-}
-/* ---------------- */
-/* Modificacion ul en clases */
-
-/* --------------------- */
-
-h1{
-    color: rgb(233, 172, 59);
-    text-shadow: 0 0 1px rgb(7, 1, 1);
-    margin-bottom: 20px;
-    text-align: center;
-    -webkit-text-stroke: 0.5px black;
-}
-
-h2{
-    color: rgb(233, 172, 59);
-    text-shadow: 0 0 1px rgb(7, 1, 1);
-    margin-bottom: 20px;
-    -webkit-text-stroke: 0.5px black;
-    text-indent: 10px;
-}
-/* H2 clase */
-.h2clase{
-    color: rgb(233, 172, 59);
-    text-shadow: 0 0 1px rgb(7, 1, 1);
-    margin-bottom: 20px;
-    -webkit-text-stroke: 0.5px black;
-    text-indent: 10px;
-    text-align: center;
-}
-h3{
-    color: rgb(236, 0, 0);
-    text-shadow: 0 0 1px rgb(7, 1, 1);
-    margin-bottom: 10px;
-    -webkit-text-stroke: 0.5px black;
-    text-indent: 10px;
-    text-align: center;
-}
-
-
-.footer {
-    background-color: rgba(174, 37, 192, 0.719);
-    text-align: center;
-    font-size: 20px;
-    text-transform:capitalize;
-    padding: 4px;
-    bottom: 0;
-    width: 100%;
-    height: 95px;
-    color: rgb(255, 238, 238);
-    position:relative;
-    clear: both;
-    left: 0%;   
-}  
-
-.redes{
-    font-size: 45px;
-    letter-spacing: 10px;
-
-}
-
-.redes a{
-    color: rgb(247, 226, 226);
-}
-
-.redes a:hover{
-    color: rgb(46, 1, 1);
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-}
-
-.contenedor {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-} 
-
